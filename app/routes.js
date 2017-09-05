@@ -19,6 +19,15 @@ export default function createRoutes() {
        },
      },
      {
+      path: '/SignUp',
+      name: 'signup',
+      getComponent(nextState, comMod) {
+        import('containers/SignUp')
+          .then(loadModule(comMod))
+          .catch(errorLoading);
+      },
+    },
+     {
       path: '*',
       name: 'notfound',
       getComponent(nextState, comMod) {
@@ -27,5 +36,6 @@ export default function createRoutes() {
           .catch(errorLoading);
       },
     },
+
   ];
 }

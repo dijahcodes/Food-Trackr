@@ -1,0 +1,83 @@
+/* SignUp Styles */
+
+.container-signup {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  background: linear-gradient( rgba(150,	187,187, 0.7), rgba(236,179,218, 0.7)), url('../../images/food2.jpg');
+  background-size: cover;
+}
+.sign {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+
+.inputWrapper {
+  background-color: white;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(50, 50, 50, 0.91);
+  -moz-box-shadow:    0px 0px 21px 0px rgba(50, 50, 50, 0.91);
+  box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.91);
+
+}
+.inputInfo {
+  color: #654F6F;
+}
+.name {
+  margin-top: 25px;
+  width: 200px;
+  border-style: solid;
+  border-color: #654F6F;
+  height: 20px;
+  outline: none;
+
+}
+.email {
+  margin-top: 15px;
+  width: 200px;
+  height: 20px;
+  outline: none;
+  border-color: #654F6F;
+}
+.birthDate {
+  margin-top: 15px;
+  height: 20px;
+  outline: none;
+  border-color: #654F6F;
+}
+.signUpButton {
+    margin-top: 15px;
+    background-color: #8F7F96;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-width: 60px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+}
+.signUpButton:hover {
+  background-color: #654F6F;
+}
+.signUpButton:active {
+  background-color: #382C3D;
+}
+a {
+  text-decoration: none;
+}

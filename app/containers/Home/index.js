@@ -10,6 +10,10 @@ import Helmet from 'react-helmet';
 import './style.css';
 import './styleM.css';
 
+import SignUp from 'containers/SignUp';
+import router from 'react-router';
+
+
 export default class Home extends React.PureComponent {
   render() {
     return (
@@ -17,7 +21,7 @@ export default class Home extends React.PureComponent {
         <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
         <div className="welcomed">
           <h1 className="welcome">Welcome to Food Trakr!</h1>
-          <p> A website to track what exactly youre eating.</p>
+          <p>A website to track what exactly youre eating.</p>
           <input type="button" className="button" value="Sign-up"/>
         </div>
       </div>
