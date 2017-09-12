@@ -27,6 +27,16 @@ export default function createRoutes() {
           .catch(errorLoading);
       },
     },
+    {
+     path: '/Newlog',
+     name: 'newlog',
+     getComponent(nextState, comMod) {
+       import('containers/Newlog')
+         .then(loadModule(comMod))
+         .catch(errorLoading);
+     },
+   },
+
      {
       path: '*',
       name: 'notfound',

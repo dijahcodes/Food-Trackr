@@ -1,0 +1,93 @@
+/* Newlog Styles */
+
+.container {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  background: linear-gradient( rgba(150,	187,187, 0.7), rgba(236,179,218, 0.7)), url('../../images/food3.jpg');
+  background-size: cover;
+}
+.background-holder {
+  width: 800px;
+  height: 400px;
+  margin: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-self:center;
+  border-radius: 25px;
+}
+.input-food {
+  margin: 30px;
+
+}
+.date {
+  padding: 5px;
+  clear: both;
+  display: block;
+}
+.input-boxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+}
+.box-input {
+  width: 50%;
+
+
+}
+.food {
+  padding: 5px;
+  width: 500px;
+
+
+}
+.calories {
+  padding: 5px;
+  width: 100px;
+
+}
+.fat {
+  padding: 5px;
+  width: 100px;
+
+
+}
+.carbs {
+  padding: 5px;
+  width: 100px;
+}
+.sugars{
+  width: 100px;
+  padding:5px;
+}
+.check-milk {
+  margin: 15px;
+  padding: 5px;
+}
+.egg {
+margin: 15px;
+padding: 5px;
+}
+.nuts {
+margin: 15px;
+padding: 5px;
+}
+.wheat {
+margin: 15px;
+padding: 5px;
+}
+.soy {
+  margin: 15px;
+  padding: 5px;
+}
+.shellfish {
+  margin: 15px;
+  padding: 5px;
+}
+.fish {
+  margin: 15px;
+  padding: 5px;
+}
