@@ -28,6 +28,15 @@ export default function createRoutes() {
       },
     },
     {
+     path: '/Dashboard',
+     name: 'dashboard',
+     getComponent(nextState, comMod) {
+       import('containers/Dashboard')
+         .then(loadModule(comMod))
+         .catch(errorLoading);
+     },
+   },
+    {
      path: '/Newlog',
      name: 'newlog',
      getComponent(nextState, comMod) {

@@ -16,7 +16,14 @@ export default class Dashboard extends React.PureComponent {
       <div className="container">
         <Helmet title="Dashboard" meta={[ { name: 'description', content: 'Description of Dashboard' }]}/>
 
-        //Remove this line and you can start writing your code here.
+            <input type="submit" value="sign-out" className="sign-out"/>
+            <h2 className="food-welcome">Food Trakr</h2>
+        <div className="dashboard-container">
+          <input type="submit" value="Add New" className="add-new"/>
+            <div className="logs">
+            
+            </div>
+        </div>
       </div>
     );
   }

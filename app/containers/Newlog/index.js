@@ -18,7 +18,7 @@ export default class Newlog extends React.PureComponent {
 
         <div className="background-holder">
           <div className="input-food">
-          <h1>Create a log.</h1>
+          <h1>Create a food log.</h1>
           <span>Date</span><input type="text" value="Date" className="date"/>
 
           <div className="box-input"><span>Food </span><input type="text" value="food" className="food" label="Food"/></div>

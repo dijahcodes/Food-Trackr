@@ -20,7 +20,7 @@ constructor() {
     username: "",
     password: "",
     email: "",
-    birthDate: ""
+    dateOfBirth: ""
   }
 }
 
@@ -44,14 +44,14 @@ handlePassword = (event) => {
 
 handleBirthDate = (event) => {
   this.setState({
-    birthDate:event.target.value
+    dateOfBirth:event.target.value
   })
 }
 
 
 signUp = () => {
   let _this = this;
-  
+
   fetch('http://localhost:8000/api/signUp', {
     method: 'POST',
     body: data
@@ -94,10 +94,10 @@ signUp = () => {
 
             <div className="inputWrapper">
               <h2 className="inputInfo"> Sign up to track your food!</h2>
-              <input type="text" onChange={this.handleName} value={this.state.username} className="username" />
-              <input type="text" onChange={this.handleEmail} value="E-mail" className="email" />
-              <input type="password" onChange={this.handlePassword} value="Password" className="password" />
-              <input type="text" onChange={this.handleBirthDate} value="Date of Birth" className="birthDate" />
+              <input type="text" onChange={this.handleUsername} value={this.state.username} className="username" />
+              <input type="text" onChange={this.handleEmail} value={this.state.email} className="email" />
+              <input type="password" onChange={this.handlePassword} value={this.state.password} className="password" />
+              <input type="text" onChange={this.handleBirthDate} value={this.state.dateOfBirth} className="birthDate" />
               <input type="submit" value="Sign-up!" className="signUpButton" />
 
             </div>

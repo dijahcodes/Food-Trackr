@@ -4,4 +4,21 @@
   display:flex;
   flex-direction:column;
   min-height:100vh;
+  background: linear-gradient( rgba(150,	187,187, 0.7), rgba(236,179,218, 0.7)), url('../../images/food4.jpg');
+  background-size: cover;
+}
+.dashboard-container {
+  background-color: white;
+  height: 700px;
+  width: 800px;
+  border-radius: 25px;
+  align-self: center;
+  margin-top: 55px;
+}
+.food-welcome {
+  align-self: center;
+  font-size: 35px;
+  margin-top: 15px;
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
 }

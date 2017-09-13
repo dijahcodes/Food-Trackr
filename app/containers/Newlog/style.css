@@ -26,15 +26,17 @@
   clear: both;
   display: block;
   width: 100px;
+  
 }
 .input-boxes{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 .box-input {
   width: 20%;
-  
+
 
 }
 .food {
