@@ -9,7 +9,7 @@
 }
 .background-holder {
   width: 800px;
-  height: 400px;
+  height: 300px;
   margin: 100px;
   background-color: white;
   display: flex;
@@ -25,17 +25,16 @@
   padding: 5px;
   clear: both;
   display: block;
+  width: 100px;
 }
 .input-boxes{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-
 }
 .box-input {
-  width: 50%;
-
+  width: 20%;
+  
 
 }
 .food {
@@ -46,21 +45,21 @@
 }
 .calories {
   padding: 5px;
-  width: 100px;
+  width: 40px;
 
 }
 .fat {
   padding: 5px;
-  width: 100px;
+  width: 40px;
 
 
 }
 .carbs {
   padding: 5px;
-  width: 100px;
+  width: 40px;
 }
 .sugars{
-  width: 100px;
+  width: 40px;
   padding:5px;
 }
 .check-milk {

@@ -19,17 +19,17 @@ export default class Newlog extends React.PureComponent {
         <div className="background-holder">
           <div className="input-food">
           <h1>Create a log.</h1>
-          <h3>Date</h3><input type="text" value="Date" className="date"/>
+          <span>Date</span><input type="text" value="Date" className="date"/>
 
           <div className="box-input"><span>Food </span><input type="text" value="food" className="food" label="Food"/></div>
 
           <div className="input-boxes">
 
-        <div className="box-input"><span>Calories </span><input type="text" value="calories" className="calories"/></div>
-        <div className="box-input"><span>Fat </span><input type="text" value="fat" className="fat"/></div>
-        <div className="box-input"><span>Carbs </span><input type="text" value="Carbs" className="carbs" /></div>
-        <div className="box-input"><span>Sugars </span><input type="text" value="Sugars" className="sugars"/></div>
-      </div>
+            <div className="box-input"><span>Calories </span><input type="text" value="calories" className="calories"/></div>
+            <div className="box-input"><span>Fat </span><input type="text" value="fat" className="fat"/></div>
+            <div className="box-input"><span>Carbs </span><input type="text" value="Carbs" className="carbs" /></div>
+            <div className="box-input"><span>Sugars </span><input type="text" value="Sugars" className="sugars"/></div>
+          </div>
 
           <h4> Contains:</h4>
           <span>Milk</span><input type="checkbox" value="milk" className="check-milk"/>
