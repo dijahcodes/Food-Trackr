@@ -80,9 +80,33 @@ signIn = () => {
   })
 };
 
-signUp = () => {
 
-}
+  signUp = () => {
+    let _this = this;
+    let data = new FormData();
+    data.append('username', this.state.username);
+    data.append('password', this.state.password);
+    data.append('dateOfBirth', this.state.dateOfBirth);
+    data.append('email', this.state.email);
+
+    fetch('http://localhost:8000/api/signUp', {
+      method: 'POST',
+      body:data
+    })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(json) {
+      if(json.error) {
+        alert(json.error);
+      }
+      else if(json.success) {
+        alert(json.success);
+      }
+    }.bind(this))
+  };
+
+
 
 
   render() {
@@ -94,10 +118,10 @@ signUp = () => {
 
             <div className="inputWrapper">
               <h2 className="inputInfo"> Sign up to track your food!</h2>
-              <input type="text" onChange={this.handleUsername} value={this.state.username} className="username" />
+              <span>Username</span><input type="text" onChange={this.handleName} value={this.state.username} className="username" />
               <input type="text" onChange={this.handleEmail} value={this.state.email} className="email" />
               <input type="password" onChange={this.handlePassword} value={this.state.password} className="password" />
-              <input type="text" onChange={this.handleBirthDate} value={this.state.dateOfBirth} className="birthDate" />
+              <input type="date" onChange={this.handleBirthDate} value={this.state.dateOfBirth} className="birthDate" />
               <input type="submit" value="Sign-up!" className="signUpButton" />
 
             </div>

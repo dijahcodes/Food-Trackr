@@ -44,6 +44,10 @@
   outline: none;
 
 }
+span {
+  color: #654F6F;
+  
+}
 .email {
   margin-top: 15px;
   width: 200px;
