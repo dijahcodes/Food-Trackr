@@ -46,7 +46,8 @@
 }
 span {
   color: #654F6F;
-  
+  align-self: flex-start;
+
 }
 .email {
   margin-top: 15px;

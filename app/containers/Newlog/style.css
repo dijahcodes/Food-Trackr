@@ -9,7 +9,7 @@
 }
 .background-holder {
   width: 800px;
-  height: 300px;
+  height: 390px;
   margin: 100px;
   background-color: white;
   display: flex;
@@ -26,7 +26,7 @@
   clear: both;
   display: block;
   width: 100px;
-  
+
 }
 .input-boxes{
   display: flex;
@@ -36,8 +36,10 @@
 }
 .box-input {
   width: 20%;
-
-
+  margin-top: 10px;
+}
+.date-input {
+  margin-top: 30px;
 }
 .food {
   padding: 5px;
@@ -63,6 +65,9 @@
 .sugars{
   width: 40px;
   padding:5px;
+}
+.allergens {
+  margin-top: 20px;
 }
 .check-milk {
   margin: 15px;
@@ -91,4 +96,44 @@ padding: 5px;
 .fish {
   margin: 15px;
   padding: 5px;
+}
+.add-new {
+  background-color: #8F7F96;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-width: 60px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+}
+.add-new:hover {
+  background-color: #654F6F;
+}
+.add-new:active {
+  background-color: #382C3D;
+}
+.cancel-new {
+  background-color: #FF3A47;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-width: 60px;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 25px;
+}
+.cancel-new:hover {
+  background-color: #BA2A34;
+}
+.cancel-new:active {
+  background-color: #7F1D23;
 }

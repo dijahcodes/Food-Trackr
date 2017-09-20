@@ -118,10 +118,10 @@ signIn = () => {
 
             <div className="inputWrapper">
               <h2 className="inputInfo"> Sign up to track your food!</h2>
-              <span>Username</span><input type="text" onChange={this.handleName} value={this.state.username} className="username" />
-              <input type="text" onChange={this.handleEmail} value={this.state.email} className="email" />
-              <input type="password" onChange={this.handlePassword} value={this.state.password} className="password" />
-              <input type="date" onChange={this.handleBirthDate} value={this.state.dateOfBirth} className="birthDate" />
+              <span>Username</span><input type="text" placeholder="Username" onChange={this.handleName} value={this.state.username} className="username" />
+              <input type="text" placeholder="Email" onChange={this.handleEmail} value={this.state.email} className="email" />
+              <input type="password" placeholder="password" onChange={this.handlePassword} value={this.state.password} className="password" />
+              <span>Date of Birth</span><input type="date" placeholder="Date of Birth" onChange={this.handleBirthDate} value={this.state.dateOfBirth} className="birthDate" />
               <input type="submit" value="Sign-up!" className="signUpButton" />
 
             </div>

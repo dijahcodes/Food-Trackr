@@ -19,7 +19,7 @@ export default class Newlog extends React.PureComponent {
         <div className="background-holder">
           <div className="input-food">
           <h1>Create a food log.</h1>
-          <span>Date</span><input type="text" value="Date" className="date"/>
+          <div className="date-input"><span>Date</span><input type="text" value="Date" className="date"/></div>
 
           <div className="box-input"><span>Food </span><input type="text" value="food" className="food" label="Food"/></div>
 
@@ -31,15 +31,20 @@ export default class Newlog extends React.PureComponent {
             <div className="box-input"><span>Sugars </span><input type="text" value="Sugars" className="sugars"/></div>
           </div>
 
-          <h4> Contains:</h4>
-          <span>Milk</span><input type="checkbox" value="milk" className="check-milk"/>
-          <span>Egg</span><input type="checkbox" value="Egg" className="egg" />
-          <span>Nuts</span><input type="checkbox" value="Nuts" className="nuts" />
-          <span>Wheat</span><input type="checkbox" value="Wheat" className="wheat"/>
-          <span>Soy</span><input type="checkbox" value="Soy" className="soy" />
-          <span>Shellfish</span><input type="checkbox" value="Shellfish" className="shellfish" />
-          <span>Fish</span><input type="checkbox" value="Fish" className="fish"/>
-          </div>
+        <div className="allergens">
+            <h4> Contains:</h4>
+            <span>Milk</span><input type="checkbox" value="milk" className="check-milk"/>
+            <span>Egg</span><input type="checkbox" value="Egg" className="egg" />
+            <span>Nuts</span><input type="checkbox" value="Nuts" className="nuts" />
+            <span>Wheat</span><input type="checkbox" value="Wheat" className="wheat"/>
+            <span>Soy</span><input type="checkbox" value="Soy" className="soy" />
+            <span>Shellfish</span><input type="checkbox" value="Shellfish" className="shellfish" />
+            <span>Fish</span><input type="checkbox" value="Fish" className="fish"/>
+        </div>
+            <input type="submit" value="Add" className="add-new" />
+            <input type="submit" value="Cancel" className="cancel-new" />
+            </div>
+
         </div>
       </div>
     );
