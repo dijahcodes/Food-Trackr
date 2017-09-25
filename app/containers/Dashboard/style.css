@@ -13,6 +13,8 @@
   border-radius: 25px;
   align-self: center;
   margin-top: 55px;
+  display: flex;
+  flex-direction: column;
 }
 .food-welcome {
   align-self: center;
@@ -52,6 +54,8 @@
   outline: none;
   font-family: 'Roboto', sans-serif;
   border-radius: 25px;
+  width: 100px;
+
 }
 
 .logs p{
@@ -66,4 +70,7 @@
   -webkit-box-shadow: 0px 0px 21px 0px rgba(50, 50, 50, 0.91);
   -moz-box-shadow:    0px 0px 21px 0px rgba(50, 50, 50, 0.91);
   box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.91);
+  margin-top: 10px;
+  margin-left: 60px;
+  color: #8F7F96;
 }

@@ -11,6 +11,7 @@ import './style.css';
 import './styleM.css';
 
 import router from 'react-router';
+import {Link} from 'react-router';
 
 export default class SignUp extends React.PureComponent {
 
@@ -48,24 +49,6 @@ handleBirthDate = (event) => {
   })
 }
 
-
-signUp = () => {
-  let _this = this;
-
-  fetch('http://localhost:8000/api/signUp', {
-    method: 'POST',
-    body: data
-  })
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(json) {
-    if(json.success) {
-      _this.signIn();
-    }
-  })
-};
-
 signIn = () => {
   let _this = this;
   fetch('http://localhost:8000/api/signIn', {
@@ -85,9 +68,13 @@ signIn = () => {
     let _this = this;
     let data = new FormData();
     data.append('username', this.state.username);
+    console.log(this.state.username);
     data.append('password', this.state.password);
+    console.log(this.state.password);
     data.append('dateOfBirth', this.state.dateOfBirth);
+    console.log(this.state.dateOfBirth);
     data.append('email', this.state.email);
+    console.log(this.state.email);
 
     fetch('http://localhost:8000/api/signUp', {
       method: 'POST',
@@ -102,6 +89,7 @@ signIn = () => {
       }
       else if(json.success) {
         alert(json.success);
+        _this.context.router.push("/Dashboard");
       }
     }.bind(this))
   };
@@ -121,8 +109,8 @@ signIn = () => {
               <span>Username</span><input type="text" placeholder="Username" onChange={this.handleName} value={this.state.username} className="username" />
               <input type="text" placeholder="Email" onChange={this.handleEmail} value={this.state.email} className="email" />
               <input type="password" placeholder="password" onChange={this.handlePassword} value={this.state.password} className="password" />
-              <span>Date of Birth</span><input type="date" placeholder="Date of Birth" onChange={this.handleBirthDate} value={this.state.dateOfBirth} className="birthDate" />
-              <input type="submit" value="Sign-up!" className="signUpButton" />
+              <input type="date" placeholder="Date of Birth" onChange={this.handleBirthDate} value={this.state.dateOfBirth} className="birthDate" />
+              <input type="submit" onClick={this.signUp} className="signUpButton" value="Sign-up!"/>
 
             </div>
 
