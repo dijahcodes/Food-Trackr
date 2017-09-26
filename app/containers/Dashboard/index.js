@@ -18,7 +18,10 @@ export default class Dashboard extends React.PureComponent {
     this.state = {
       food:'',
       calories:'',
+      carbs: '',
+      sugars: '',
       fat:'',
+      allergens:'',
       logs:[]
     }
   }
@@ -47,14 +50,14 @@ componentWillMount() {
       <div className="container">
         <Helmet title="Dashboard" meta={[ { name: 'description', content: 'Description of Dashboard' }]}/>
 
-            <input type="submit" value="sign-out" className="sign-out"/>
+            <div className="out-div"><input type="submit" value="sign-out" className="sign-out"/></div>
               <h2 className="food-welcome">Food Trakr</h2>
-              <Link to={'/Newlog'} className="add-new-dash">Add new</Link>
+              <div className="dash-div"><Link to={'/Newlog'} className="add-new-dash">Add new</Link></div>
         <div className="dashboard-container">
 
             <div className="logs">
             {this.state.logs.map((log, index) => (
-              <div className='log'><p>food: {log.food} ... fat: {log.fat} ... calories: {log.calories}</p></div>
+              <div className='log'><p>food: {log.food} calories: {log.calories}  fat: {log.fat} Sugar:.. {log.sugars} carbs:.. {log.carbs} Allergens:.. {log.allergens} </p></div>
             ))}
             </div>
 

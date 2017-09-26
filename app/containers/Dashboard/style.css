@@ -12,7 +12,7 @@
   width: 800px;
   border-radius: 25px;
   align-self: center;
-  margin-top: 55px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -38,6 +38,7 @@
   font-family: 'Roboto', sans-serif;
   border-radius: 25px;
   width: 120px;
+
 
 }
 .add-new-dash {
@@ -71,6 +72,26 @@
   -moz-box-shadow:    0px 0px 21px 0px rgba(50, 50, 50, 0.91);
   box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.91);
   margin-top: 10px;
-  margin-left: 60px;
+
   color: #8F7F96;
+}
+.logs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.out-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.dash-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }

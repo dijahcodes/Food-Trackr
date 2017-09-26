@@ -101,20 +101,16 @@ export default class Newlog extends React.PureComponent {
 
   storeFood = () =>
   {
+    let _this = this;
     let data = new FormData();
 
     data.append('calories', this.state.calories);
-    console.log(this.state.calories);
     data.append('food', this.state.food);
-    console.log(this.state.food);
     data.append('fat', this.state.fat);
-    console.log(this.state.fat);
     data.append('carbs', this.state.carbs);
-    console.log(this.state.carbs);
     data.append('sugars', this.state.sugars);
-    console.log(this.state.sugars);
     data.append('allergens', JSON.stringify(this.state.allergens));
-    console.log(this.state.allergens);
+
 
 
     fetch('http://localhost:8000/api/storeLog', {
@@ -127,8 +123,11 @@ export default class Newlog extends React.PureComponent {
     .then(function(json) {
       this.setState({
         log:json.log
-      })
+    })
+    _this.context.router.push("/Dashboard");
     }.bind(this))
+
+
   }
 
   render() {
